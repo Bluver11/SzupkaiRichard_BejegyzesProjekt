@@ -19,7 +19,11 @@ namespace SzupkaiRichard_BejegyzesProjekt
             bejegyzes.Add(b2);
 
             Feladat1();
+            Feladat2();
+           Feladat3();
             FajlBeolvasas("bejegyzesek.csv");
+            Console.WriteLine(bejegyzes);
+            Console.ReadKey();
         }
        private static void Feladat1()
         {
@@ -45,6 +49,24 @@ namespace SzupkaiRichard_BejegyzesProjekt
                 }
             }
 
+        }
+
+        private static void Feladat2()
+        {
+            int likeszam = 0;
+            while(likeszam != bejegyzes.Count)
+            {
+
+                likeszam++;
+
+            }
+
+        }
+        private static void Feladat3()
+        {
+            Console.WriteLine("Kérlek írj valamilyen bejegyzést");
+            string szoveg = Console.ReadLine();
+            bejegyzes[2].Tartalom = szoveg;
         }
         private static void FajlBeolvasas(string fajlnev)
         {
